@@ -1,0 +1,28 @@
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+  background-color: #4d4c90;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline double;
+  text-underline-position: below;
+}
+
+@media (min-width: 700px) { 
+  h1 {
+  font-size: 3rem;
+  }
+}
+

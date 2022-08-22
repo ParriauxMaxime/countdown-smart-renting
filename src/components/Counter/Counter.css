@@ -1,0 +1,29 @@
+.Counter {
+  display: flex;
+  width: min(80vh, 80vw);
+  height: min(80vh, 80vw);
+  border-radius: 50%;
+  font-size: 0;
+  color: black
+}
+
+.Counter::after {
+  content: attr(data-progress);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  border-radius: 50%;
+  background: #22216d;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 700px) { 
+  .Counter::after {
+    font-size: 5rem;
+  }
+}
